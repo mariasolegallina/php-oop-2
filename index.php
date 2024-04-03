@@ -1,6 +1,5 @@
 <?php
-require __DIR__ . 'db.php';
-
+require 'db.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +15,29 @@ require __DIR__ . 'db.php';
 </head>
 
 <body>
+
+    <div class="row row-cols-2">
+
+        <?php
+        foreach ($products as $product) {
+        ?>
+            <div class="col d-flex justify-content-center">
+                <div class="card">
+                    <img src="<?= $product->image ?>" class="card-img-top">
+                    <div class="card-body">
+                        <h5><?= $product->name ?></h5>
+                    </div>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
+
+
+
+
+    </div>
+
 
 
 
