@@ -1,9 +1,5 @@
 <?php
-require __DIR__ . '/Models/Product.php';
-
-$cuccia = new Product("Cuscino verde", 23, "/img/product-8.jpg");
-
-echo '<pre>', var_dump($cuccia), '</pre>';
+require __DIR__ . 'db.php';
 
 ?>
 
